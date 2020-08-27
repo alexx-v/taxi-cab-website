@@ -3,7 +3,6 @@ function hamburgerToggle() {
 	let menu = document.querySelector('.menu');
 
 	hamburger.addEventListener('click', function toggle() {
-		console.log('Hamburger clicked: ', hamburger);
 		menu.classList.toggle('header__menu--active');
 		hamburger.classList.toggle('hamburger--active');
 	});
