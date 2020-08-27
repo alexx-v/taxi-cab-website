@@ -1,0 +1,132 @@
+$logoSecond: #ffc61a;
+
+.header {
+	position: relative;
+	height: 740px;
+	background: $black url('../img/bg-header.jpg') center top no-repeat;
+	background-size: cover;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 365px;
+		width: 100%;
+		height: 484px;
+		background: url('../img/taxi.png') center bottom no-repeat;
+		background-size: contain;
+	}
+
+	@media (min-resolution: 2dppx), (min-width: 1500px) {
+		&::before {
+			background-image: url('../img/taxi-2x.png');
+		}
+	}
+}
+
+.header__wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header__nav {
+	display: flex;
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+.header__menu {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: calc(100% - 190px);
+
+	padding: 0;
+	margin: 0;
+}
+
+.header__logo {
+	margin-right: auto;
+	color: #fff;
+	font-family: $latoB;
+	font-size: 40px;
+	text-decoration: none;
+
+	& span {
+		color: $logoSecond;
+	}
+
+	& p {
+		padding: 0;
+		margin: 0;
+		font-size: 15px;
+		font-family: $latoB;
+		letter-spacing: 2.5px;
+		text-transform: uppercase;
+	}
+
+	&:hover p,
+	&:focus p {
+		color: $logoSecond;
+	}
+}
+
+.header__banner {
+	width: 100%;
+}
+
+@media (max-width: 960px) {
+	.header__nav {
+		position: relative;
+		margin-top: 40px;
+	}
+
+	.header__menu {
+		display: none;
+		padding: 30px;
+		max-width: calc(100% - 90px);
+	}
+
+	.header__menu--active {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: $first;
+	}
+
+	.header__nav__hamburger.hamburger {
+		display: block;
+	}
+}
+
+@media (max-width: 760px) {
+	.header {
+		height: 580px;
+
+		&::before {
+			top: 330px;
+			height: 400px;
+		}
+	}
+}
+
+@media (max-width: 580px) {
+	.header {
+		height: 480px;
+
+		&::before {
+			top: 240px;
+			height: 380px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.header {
+		height: 380px;
+
+		&::before {
+			height: 280px;
+		}
+	}
+}

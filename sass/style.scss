@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import 'normalize';
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+@import 'core';
+
+@import './blocks/header';
+@import './blocks/menu';
+@import './blocks/banner';
+@import './blocks/promo';
+@import './blocks/order';
+@import './blocks/tariffs';
+@import './blocks/benefits';
+@import './blocks/list';
+@import './blocks/download';
+@import './blocks/app';
+@import './blocks/testimonials';
+@import './blocks/call';
+@import './blocks/footer';
+@import './blocks/socials';
+@import './blocks/hamburger';

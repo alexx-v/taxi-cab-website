@@ -1,0 +1,156 @@
+.footer {
+	background: $black url('../img/bg-footer.jpg') center no-repeat;
+	background-size: cover;
+}
+
+.footer__wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 70px;
+}
+
+.footer__item {
+	width: 31%;
+	margin-bottom: 50px;
+}
+
+.footer__item__title {
+	margin: 0;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	font-size: 25px;
+	font-family: $latoB;
+	color: $white;
+	text-transform: uppercase;
+	color: $first;
+	box-sizing: border-box;
+	border-bottom: 8px solid $first;
+}
+
+.footer__item__text {
+	margin: 0;
+	margin-bottom: 30px;
+	color: $white;
+}
+
+.footer__copyright {
+	margin: 20px auto 20px auto;
+	font-size: 14px;
+	text-align: center;
+	color: $white;
+}
+
+.footer__download__links {
+	width: 180px;
+
+	& a {
+		position: relative;
+		display: block;
+		color: $first;
+		margin-bottom: 20px;
+		text-decoration: none;
+		transition-duration: 500ms;
+		transition-property: color;
+		outline: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+
+		& i {
+			position: absolute;
+			top: -5px;
+			right: 0;
+			font-size: 30px;
+			color: $white;
+
+			transition-duration: 500ms;
+			transition-property: color;
+		}
+
+		&:hover i,
+		&:focus i {
+			color: $first;
+		}
+	}
+}
+
+.footer__item__address {
+	position: relative;
+	margin: 0;
+	margin-bottom: 35px;
+	padding-left: 45px;
+	color: $white;
+
+	& i {
+		position: absolute;
+		left: 0;
+		font-size: 24px;
+	}
+}
+
+.footer__contact__links {
+	& a {
+		position: relative;
+		display: block;
+		margin-bottom: 30px;
+		padding-left: 45px;
+		color: $white;
+		text-decoration: none;
+		outline: none;
+
+		transition-duration: 500ms;
+		transition-property: color;
+
+		&:hover,
+		&:focus {
+			color: $first;
+			text-decoration: underline;
+		}
+
+		& i {
+			position: absolute;
+			left: 0;
+
+			transition-duration: 500ms;
+			transition-property: color;
+		}
+
+		&:hover i,
+		&:focus i {
+			color: $first;
+		}
+
+		& i.fa-mobile {
+			position: absolute;
+			top: -2px;
+			left: 2px;
+			font-size: 26px;
+		}
+
+		& i.fa-envelope {
+			position: absolute;
+			top: 3px;
+			left: 1px;
+			font-size: 16px;
+		}
+	}
+}
+
+@media (max-width: 760px) {
+	.footer__wrap {
+		flex-direction: column;
+		justify-content: start;
+		padding-top: 50px;
+	}
+
+	.footer__item {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.footer__item__title {
+		padding-bottom: 20px;
+	}
+}

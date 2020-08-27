@@ -1,0 +1,51 @@
+.app {
+	width: 440px;
+	text-align: left;
+
+	@include clearfix();
+}
+
+.app__title {
+	margin: 0;
+	margin-bottom: 20px;
+	padding-right: 55px;
+	font-family: $latoB;
+}
+
+.app__text {
+	margin: 0;
+	margin-bottom: 55px;
+}
+
+.app__link {
+	display: inline-block;
+	padding: 5px 20px 5px 20px;
+	width: 210px;
+	height: 65px;
+	border-radius: 33px;
+	background-color: $black;
+	box-sizing: border-box;
+	transition-duration: 300ms;
+	transition-property: transform;
+	outline: none;
+
+	&:hover,
+	&:focus {
+		transform: scale(1.1);
+	}
+
+	&.app__link--google {
+		float: left;
+		background: $black url('../img/g-play.png') center center no-repeat;
+		background-size: contain;
+		background-origin: content-box;
+	}
+
+	&.app__link--apple {
+		float: right;
+		background: $black url('../img/a-store.png') center center no-repeat;
+		background-position: center center;
+		background-size: contain;
+		background-origin: content-box;
+	}
+}

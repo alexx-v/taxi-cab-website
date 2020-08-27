@@ -1,0 +1,32 @@
+.socials {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+
+	margin-top: auto;
+
+	list-style: none;
+	padding: 0;
+}
+
+.socials__item {
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.socials__item__link {
+	outline: none;
+
+	& i {
+		font-size: 20px;
+		color: $first;
+		transition-property: transform;
+		transition-duration: 500ms;
+	}
+
+	&:hover i,
+	&:focus i {
+		transform: scale(1.2);
+		color: $white;
+	}
+}

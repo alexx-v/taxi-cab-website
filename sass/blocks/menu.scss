@@ -1,0 +1,29 @@
+.menu {
+	list-style: none;
+}
+
+.menu__element {
+	margin-bottom: 10px;
+}
+
+.menu__link {
+	padding: 5px 20px;
+	font-size: 17px;
+	font-family: $latoB;
+	color: $white;
+	text-decoration: none;
+	border-radius: 15px;
+	text-transform: uppercase;
+	outline: none;
+
+	&:hover,
+	&:focus {
+		color: $black;
+		background-color: $first;
+	}
+}
+
+.menu__link--active {
+	color: $black;
+	background-color: $first;
+}

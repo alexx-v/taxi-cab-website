@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <title>Taxi Cab</title>
+  <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+  <!-- <script src="https://kit.fontawesome.com/ef3da9ac34.js" crossorigin="anonymous"></script> -->
+  <script src="js/all.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+      <div class="wrap header__wrap">
+
+        <nav class="header__nav">
+          <a href="#" class="header__logo">
+            Cab<span>HUB</span>
+            <p>Call and relax</p>
+          </a>
+
+          <button id="hamburger" class="header__nav__hamburger hamburger " type="button" aria-label="Menu button"><span
+              class="hamburger__element"></span></button>
+
+          <ul class="menu header__menu">
+            <li class="menu__element"><a class="menu__link menu__link--active" href="#">Home</a></li>
+            <li class="menu__element"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__element"><a class="menu__link" href="#">Features</a></li>
+            <li class="menu__element"><a class="menu__link" href="#">Blog</a></li>
+            <li class="menu__element"><a class="menu__link" href="#">Order Now</a></li>
+            <li class="menu__element"><a class="menu__link" href="#">Contacts</a></li>
+          </ul>
+        </nav>
+        <section class="banner header__banner">
+          <h2 class="banner__title">Book cab now</h2>
+          <a class="banner__link" href="tel:+12345678900">+123 4567 8900</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="promo">
+      <div class="wrap promo__wrap">
+
+        <section class="promo__about">
+          <h2 class="promo__title">Best in the city <span>trusted cab service</span></h2>
+          <p class="promo__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus
+            hendrerit,
+            massa efficitur
+            dapibus
+            pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris.Quisque sollicitudin feugiat
+            risus,
+            eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante,
+            euismod aliquet nulla metus a mauris.</p>
+          <a href="#" class="promo__link">Read more</a>
+        </section>
+
+        <section class="order promo__order">
+          <h2 class="order__title">Book a <span>cab</span></h2>
+
+          <form class="order__form">
+
+            <div class="order__form__wrap">
+              <label for="order-name">Name</label>
+              <input id="order-name" type="text" name="name" placeholder="Name">
+              <label for="order-phone">Phone</label>
+              <input id="order-phone" type="tel" name="phone" placeholder="Phone">
+              <label for="order-date">Date</label>
+              <input id="order-date" type="text" name="date" placeholder="When">
+              <label for="order-time">Time</label>
+              <input id="order-time" type="text" name="time" placeholder="Time">
+              <label for="order-start">Start</label>
+              <input id="order-start" type="text" name="start" placeholder="Start">
+              <label for="order-end">End</label>
+              <input id="order-end" type="text" name="end" placeholder="End">
+
+              <label for="cars">Choose a car:</label>
+              <select name="cars" id="cars">
+                <option value="">Choose a car</option>
+                <optgroup label="Business Class">
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </optgroup>
+                <optgroup label="Standard Class">
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </optgroup>
+                <optgroup label="Economy Class">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Ford</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <input class="order__form__btn" type="submit" value="Submit">
+          </form>
+        </section>
+
+      </div>
+    </div>
+
+    <section class="tariffs">
+      <h2 class="tariffs__title">Our <span>tariffs</span></h2>
+      <ul class="wrap tariffs__wrap">
+        <li class="tariffs__item">
+          <h3 class="tariffs__item__title">Economy class</h3>
+          <p class="tariffs__item__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus
+            hendrerit,
+            massa efficitur.</p>
+          <p class="tariffs__item__price">$1,5/MI</p>
+          <a class="tariffs__item__btn" href="#">Read more</a>
+        </li>
+        <li class="tariffs__item tariffs__item--active">
+          <h3 class="tariffs__item__title">Standard class</h3>
+          <p class="tariffs__item__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus
+            hendrerit,
+            massa efficitur.</p>
+          <p class="tariffs__item__price">$2,5/MI</p>
+          <a class="tariffs__item__btn" href="#">Read more</a>
+          <i class="fa fa-star"></i>
+        </li>
+        <li class="tariffs__item">
+          <h3 class="tariffs__item__title">Business class</h3>
+          <p class="tariffs__item__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus
+            hendrerit,
+            massa efficitur.</p>
+          <p class="tariffs__item__price">$5,5/MI</p>
+          <a class="tariffs__item__btn" href="#">Read more</a>
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="benefits">
+      <div class="wrap benefits__wrap">
+        <h2 class="benefits__title">We do better <span>than you wish</span></h2>
+        <ul class="list benefits__list">
+          <li class="list__item">
+            <h3 class="list__item__title">Home Pickup</h3>
+            <p class="list__item__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus
+              hendrerit,
+              massa efficitur.</p>
+            <span class="list__icon"><i class="fa fa-star"></i></span>
+          </li>
+          <li class="list__item">
+            <h3 class="list__item__title">Fast booking</h3>
+            <p class="list__item__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus
+              hendrerit,
+              massa efficitur.</p>
+            <span class="list__icon"><i class="fa fa-hourglass-half"></i></span>
+          </li>
+          <li class="list__item">
+            <h3 class="list__item__title">Bonuses for ride</h3>
+            <p class="list__item__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus
+              hendrerit,
+              massa efficitur.</p>
+            <span class="list__icon"><i class="fa fa-fort-awesome"></i></span>
+          </li>
+          <li class="list__item">
+            <h3 class="list__item__title">GPS searching</h3>
+            <p class="list__item__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus
+              hendrerit,
+              massa efficitur.</p>
+            <span class="list__icon"><i class="fa fa-cog"></i></span>
+          </li>
+        </ul>
+
+        <a href="#" class="benefits__link">Read more</a>
+      </div>
+    </section>
+
+    <section class="download">
+      <h2 class="download__title">Download <span>best cab services</span></h2>
+      <div class="wrap download__wrap">
+        <section class="app download__app">
+          <h3 class="app__title">Download the Cab voucher app free! <span>Get Exciting New Offers</span></h3>
+          <p class="app__text">
+            Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.
+          </p>
+          <a href="#" class="app__link app__link--google" aria-label="Link to Gootle play"></a>
+          <a href="#" class="app__link app__link--apple" aria-label="Link to App Store"></a>
+        </section>
+      </div>
+    </section>
+
+    <section class="testimonials">
+
+      <div class="wrap testimonials__wrap">
+
+        <h2 class="testimonials__title">Happy clients <span>testimonials</span></h2>
+
+        <blockquote class="testimonials__item">
+          <p class="testimonials__item__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus
+            hendrerit, massa efficitur.Quisque sollicitudin feugiat risus.</p>
+          <footer class="testimonials__item__footer">
+            <p class="testimonials__item__author">John Doe <span>businessman</span></p>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonials__item">
+          <p class="testimonials__item__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus
+            hendrerit, massa efficitur.Quisque sollicitudin feugiat risus.</p>
+          <footer class="testimonials__item__footer">
+            <p class="testimonials__item__author">John Doe <span>businessman</span></p>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="call">
+      <div class="wrap call__wrap">
+        <h2 class="call__title">We are Ready to Take Your Call 24 Hours, 7 Days!</h2>
+        <a class="call__link" href="tel:+123 4567 8900">+123 4567 8900</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+
+      <div class="wrap footer__wrap">
+        <div class="footer__item">
+          <h3 class="footer__item__title">About cab hub</h3>
+          <p class="footer__item__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus
+            hendrerit, massa efficitur.Quisque sollicitudin feugiat risus, eu posuere ex euismod eu.</p>
+
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__item__link" href="#" aria-label="Facebook"><i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__item__link" href="#" aria-label="Youtube"><i class="fa fa-youtube"></i></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__item__link" href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__item__link" href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="footer__item">
+          <h3 class="footer__item__title">Download</h3>
+          <p class="footer__item__text">Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus
+            hendrerit.</p>
+          <div class="footer__download__links">
+            <a href="#">Android Users <i class="fa fa-android"></i></a>
+            <a href="#">IOS Users <i class="fa fa-apple"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__item">
+          <h3 class="footer__item__title">Contact</h3>
+          <p class="footer__item__address"><i class="fa fa-map-marker"></i>
+            +123, Main Street, Your City,
+            New York, USA 789456</p>
+          <div class="footer__contact__links">
+            <a href="tel:+12345678900"><i class="fa fa-mobile"></i>
+              +123 4567 8900</a>
+            <a href="email:order@taxi-cab.com"><i class="fa fa-envelope"></i>
+              order@taxi-cab.com</a>
+          </div>
+        </div>
+
+        <p class="footer__copyright">© 2020 PSDfreebies.com</p>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>

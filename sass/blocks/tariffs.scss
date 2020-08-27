@@ -1,0 +1,169 @@
+$itemBg: #f5f4f2;
+
+.tariffs {
+	text-align: center;
+}
+
+.tariffs__title {
+	margin: 0;
+	margin-top: 60px;
+	margin-bottom: 35px;
+
+	color: $first;
+
+	& span {
+		display: block;
+		color: $black;
+	}
+}
+
+.tariffs__wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 100px 0 70px 0;
+	list-style: none;
+}
+
+.tariffs__item {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 115px 30px 25px 30px;
+	width: 375px;
+	box-sizing: border-box;
+	background-color: $itemBg;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: -100px;
+		width: 100%;
+		height: 178px;
+		background: url('../../img/taxi-item.png') center no-repeat;
+		background-size: contain;
+
+		@media (min-resolution: 2dppx), (min-width: 1500px) {
+			background-image: url('../img/taxi-item-2x.png');
+		}
+	}
+}
+
+.tariffs__item__title {
+	margin: 0;
+	margin-bottom: 20px;
+	font-family: $latoB;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.tariffs__item__text {
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.tariffs__item__price {
+	margin: 0;
+	margin-bottom: 40px;
+	margin-top: auto;
+	font-size: 44px;
+	font-family: $latoB;
+	color: $first;
+	text-transform: uppercase;
+}
+
+.tariffs__item__btn {
+	@include button();
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 165px;
+	background-color: $first;
+	color: $black;
+	box-sizing: border-box;
+
+	&:hover,
+	&:focus {
+		background-color: $black;
+		color: $white;
+	}
+}
+
+.tariffs__item--active {
+	background-color: $first;
+
+	&::after {
+		content: '';
+		position: absolute;
+		right: -0px;
+		bottom: 0px;
+		width: 0px;
+		height: 0px;
+		border: 40px solid transparent;
+		border-right: 40px solid #000;
+		border-bottom: 40px solid #000;
+	}
+
+	& .tariffs__item__price {
+		color: $black;
+	}
+
+	& .tariffs__item__btn {
+		background-color: $black;
+		color: $white;
+
+		&:hover,
+		&:focus {
+			color: $first;
+		}
+	}
+
+	& .fa-star {
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		font-size: 30px;
+		color: $first;
+		z-index: 1;
+	}
+}
+
+@media (max-width: 1200px) {
+	.tariffs__wrap {
+		justify-content: space-around;
+	}
+
+	.tariffs__item {
+		padding-top: 75px;
+		width: 300px;
+	}
+
+	.tariffs__item__title {
+		font-size: 24px;
+	}
+
+	.tariffs__item__price {
+		font-size: 34px;
+	}
+}
+
+@media (max-width: 960px) {
+	.tariffs__wrap {
+		flex-direction: column;
+		align-content: center;
+	}
+
+	.tariffs__item {
+		margin-bottom: 135px;
+		padding-top: 85px;
+		width: 100%;
+
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+}

@@ -1,0 +1,41 @@
+.banner {
+	text-align: center;
+}
+
+.banner__title {
+	margin: 0;
+	padding: 0;
+	color: $first;
+}
+
+.banner__link {
+	font-size: 72px;
+	font-family: $latoB;
+	color: $white;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: $first;
+	}
+}
+
+@media (max-width: 760px) {
+	.banner__title {
+		font-size: 24px;
+	}
+
+	.banner__link {
+		font-size: 44px;
+	}
+}
+
+@media (max-width: 480px) {
+	.banner__title {
+		font-size: 20px;
+	}
+
+	.banner__link {
+		font-size: 34px;
+	}
+}

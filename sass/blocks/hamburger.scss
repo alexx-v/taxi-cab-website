@@ -1,0 +1,58 @@
+.hamburger {
+	height: 50px;
+	display: none;
+	margin-left: auto;
+	background: none;
+	cursor: pointer;
+	outline: none;
+	transition-property: border-color, background-color;
+	transition-duration: 500ms;
+	text-align: center;
+	border: 3px solid $first;
+
+	&:hover,
+	&:focus {
+		border-color: transparent;
+	}
+}
+
+.hamburger__element {
+	width: 50px;
+	height: 3px;
+	background-color: $first;
+	display: block;
+	margin: 0 auto;
+
+	&::after,
+	&::before {
+		content: '';
+		width: 50px;
+		height: 3px;
+		background-color: $first;
+		display: block;
+	}
+
+	&::after {
+		transform: translateY(8px);
+	}
+
+	&::before {
+		transform: translateY(-11px);
+	}
+}
+
+.hamburger--active {
+	.hamburger__element {
+		transform: rotate(45deg);
+
+		&::after {
+			transform: rotate(-90deg);
+
+			position: relative;
+		}
+
+		&::before {
+			display: none;
+		}
+	}
+}

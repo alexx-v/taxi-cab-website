@@ -1,0 +1,79 @@
+$orderTitleBg: #171717;
+$inputBd: #e4e4e4;
+$inputPlc: #4b4b4b;
+
+.order {
+	width: 425px;
+	background-color: $white;
+	box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	flex-shrink: 0;
+}
+
+.order__form {
+	padding: 20px;
+
+	label {
+		@include visually-hidden;
+	}
+}
+
+.order__form__wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-left: 15px;
+
+	& input {
+		margin-bottom: 23px;
+		padding: 10px 0;
+		width: 175px;
+		font-size: 20px;
+		font-family: $latoR;
+		box-sizing: border-box;
+		border: none;
+		border-bottom: 3px solid $inputBd;
+		outline: none;
+
+		&::placeholder {
+			opacity: 1;
+			color: $inputPlc;
+		}
+	}
+
+	& input[type='date'],
+	& input[type='time'],
+	& select {
+		color: $inputPlc;
+	}
+
+	& label[for='cars'] {
+		@include visually-hidden();
+	}
+
+	& select {
+		margin-bottom: 40px;
+		font-size: 20px;
+		width: 100%;
+		padding: 10px 0;
+		border: none;
+		border-bottom: 3px solid $inputBd;
+	}
+}
+
+.order__title {
+	margin: 0;
+	padding: 17px 35px;
+	color: $white;
+	background-color: $orderTitleBg;
+
+	& span {
+		color: $first;
+		font-size: inherit;
+	}
+}
+
+.order__form__btn {
+	@include button();
+	width: 100%;
+}

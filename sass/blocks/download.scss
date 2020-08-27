@@ -1,0 +1,94 @@
+.download {
+	text-align: center;
+}
+
+.download__wrap {
+	position: relative;
+	padding-bottom: 160px;
+	padding-left: 120px;
+
+	background: url('../img/app.png') no-repeat;
+	background-size: contain;
+	background-position: right 80px top;
+
+	@media (min-resolution: 2dppx), (min-width: 1500px) {
+		background-image: url('../img/app-2x.png');
+	}
+}
+
+.download__title {
+	margin: 0;
+	margin-top: 60px;
+	margin-bottom: 35px;
+	color: $first;
+
+	& span {
+		display: block;
+		color: $black;
+	}
+}
+
+.download__app {
+	padding-top: 35px;
+}
+
+@media (max-width: 1200px) {
+	.download__wrap {
+		background-position-x: right;
+	}
+}
+
+@media (max-width: 960px) {
+	.download__wrap {
+		padding-bottom: 60px;
+		padding-left: 15px;
+		background: none;
+		text-align: center;
+	}
+
+	.download {
+		& .app {
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+
+		& .app__title {
+			padding-right: 0;
+		}
+	}
+}
+
+@media (max-width: 580px) {
+	.download {
+		& .app {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.download {
+		& .app__link {
+			width: 47%;
+			padding: 0;
+		}
+
+		& .app__text {
+			margin-bottom: 30px;
+		}
+	}
+
+	.download__wrap {
+		padding-bottom: 40px;
+	}
+
+	.download__app {
+		padding-top: 15px;
+	}
+
+	.download__title {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+}
