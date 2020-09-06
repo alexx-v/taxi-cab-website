@@ -18,7 +18,7 @@ $inputPlc: #4b4b4b;
 	}
 }
 
-.order__form__wrap {
+.order__form-wrap {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -73,7 +73,7 @@ $inputPlc: #4b4b4b;
 	}
 }
 
-.order__form__btn {
+.order__btn {
 	@include button();
 	width: 100%;
 }
